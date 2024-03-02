@@ -1,0 +1,57 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+:root{
+    --circle-color: #FADAC5;
+    --shop-btn: #EC6231;
+    --h1-text: #000002;
+    --link-color: #CD6643;
+    --bg-color: #FEF7E7;
+}
+.main{
+    background-color: var(--bg-color);
+    width:100%;
+    height: 700px;
+}
+.main .container{
+    width:80%;
+    margin:auto;
+}
+.main .container .nav-head{
+    width:100%;
+    height:8vh;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+.main .container .nav-head .img{
+    width:130px;
+    height: 130px;
+    background-image: url('../images/logo.png');
+    background-position: center;
+    background-size: cover;
+    cursor:pointer;
+}
+.main .container .nav-head .navlinks{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.main .container .nav-head .navlinks ul{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.main .container .nav-head .navlinks ul li{
+    padding: 0px 16px;
+    list-style: none;
+}
+.main .container .nav-head .navlinks ul li a{
+    text-decoration: none;
+    color:var(--link-color);
+    font-size:16px;
+}
+.main .container .nav-head .navlinks 
