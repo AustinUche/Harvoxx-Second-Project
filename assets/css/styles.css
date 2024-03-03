@@ -11,7 +11,7 @@
     --link-color: #CD6643;
     --bg-color: #FEF7E7;
 }
-body::after{
+/* body::after{
     content:'';
     height:650px;
     width:650px;
@@ -21,7 +21,7 @@ body::after{
     top:-35%;
     right: 2.5%;
     z-index:1;
-}
+} */
 .main{
     background-color: var(--bg-color);
     width:100%;
@@ -53,7 +53,8 @@ body::after{
 }
 .main .container .nav-head .navlinks{
     display:flex;
-    justify-content:center;
+    justify-content:space-between;
+    gap:200px;
     align-items:center;
     z-index:100;
     font-family:sans-serif;
@@ -163,5 +164,54 @@ body::after{
 }
 .hero .container .right img{
     width:70%;
-    height: 500px;
+    /* height: 500px; */
+}
+
+.hero .container .right .popup{
+    background-color: white;
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.5);
+    border-radius:10px;
+    width:300px;
+    position:absolute;
+    font-family:sans-serif;
+}
+.hero .container .right .popup .content{
+    display:flex;
+    flex-direction: column;
+    width:90%;
+    margin:auto;
+    padding:15px 0px;
+}
+.hero .container .right .popup .content .up{
+    display: flex;
+    width:100%;
+}
+.hero .container .right .popup .content .up .up1{
+    width:30%;
+    margin-right:-20px;
+}
+.hero .container .right .popup .content .up .up1 img{
+    width: 60%;
+    border-radius:50%;
+}
+.hero .container .right .popup .content .up .up2{
+    width:100%;
+    display:flex;
+    flex-wrap:wrap;
+}
+.hero .container .right .popup .content .up .up2 .write-up{
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+    margin-bottom:5px;
+}
+
+@media only screen and (max-width:690px){
+    .main .container .nav-head i.bx-menu{
+        display:block;
+    }
+    .main .container .nav-head .navlinks{
+        display:none;
+    }
+    .hero .container .right 
 }
