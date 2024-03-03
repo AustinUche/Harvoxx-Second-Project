@@ -217,7 +217,7 @@
 
 @media only screen and (max-width: 690px) {
   .main .container {
-    padding: 20px 10px;
+    padding: 10px 5px;
   }
   .main .container .nav-head i.bx-menu {
     display: block;
@@ -227,6 +227,7 @@
   }
   .hero .container {
     flex-direction: column-reverse;
+    padding-bottom:30px;
   }
   .hero .container .left{
     margin-top:60px;
@@ -242,8 +243,8 @@
     width: 50%;
   }
   .hero .container .right .popup{
-    width:40%;
-    right:215px;
+    width:50%;
+    right:180px;
   }
 }
 
@@ -255,8 +256,111 @@
         width:70%;
     }
     .hero .container .right .popup{
-        right:125px;
+        right:115px;
+        bottom:50px;
+        padding:5px 0px;
+        width:60%;
+    }
+}
+
+@media only screen and (max-width:430px){
+    .hero .container .right img{
+        width:80%;
+    }
+    .hero .container .right .popup {
+        width:85%;
+        bottom:75px;
+        right:30px;
+        padding:10px 0px;
+    }
+    .hero .container .left h1{
+        font-size:35px;
+    }
+}
+
+@media only screen and (max-width:390px){
+    .main .container {
+        width:100%;
+    }
+    .main .container .nav-head i.bx-menu{
+        margin-right:10px;
+    }
+    .hero .container .right .popup{
+        padding:5px 0px;
+        bottom:115px;
+    }
+}
+
+@media only screen and (max-width:360px){
+    .hero .container .right .popup{
+        padding:0px;
         bottom:150px;
-        width:55%;
+    }
+    .hero .container .left .notify-me input{
+        padding:5px;
+    }
+}
+
+@media only screen and (max-width:320px){
+    .hero .container .left{
+        width:100%;
+        gap:25px;
+    }
+    .hero .container .left h1{
+        font-size:30px;
+    }
+    .hero .container .left .notify-me input{
+        padding:0px 10px;
+    }
+    .hero .container .left .notify-me a{
+        border:1px solid var(--h1-text);
+        font-size: 10px;
+        padding:7px;
+    }
+    .hero .container .left .socials i{
+        font-size:20px;
+    }
+    .hero .container .right .popup{
+        bottom:180px;
+    }
+}
+
+@media only screen and (max-width:300px){
+    .hero .container {
+        width:90%;
+    }
+    .hero .container .left{
+        gap:20px;
+    }
+    .hero .container .left h1{
+        font-size:25px;
+    }
+    .hero .container .left .notify-me{
+        width:100%;
+    }
+    .hero .container .left .notify-me a{
+        padding:7px 20px;
+        font-size:5px;
+    }
+    .hero .container .right .popup{
+        width:90%;
+        right: 15px;
+        bottom:200px;
+    }
+}
+
+@media only screen and (max-width:280px){
+    .hero .container .left .notify-me{
+        width:100%;
+        padding: 1px;
+    }
+    .hero .container .left  .notify-me a{
+        padding:2px 10px;
+        width:100%;
+        font-size:7px;
+        text-align:center;
+    }
+    .hero .container .right .popup{
+        bottom:195px;
     }
 }
